@@ -1,0 +1,42 @@
+{
+  "name": "webpack-caching-demos",
+  "version": "1.0.0",
+  "description": "differet webpack caching confign demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist:1": "webpack --progress --config 1.hash.config.js",
+    "dist:2": "webpack --progress --config 2.chunkhash.config.js",
+    "dist:3": "webpack --progress --config 3.runtimeChunk.config.js",
+    "dist:4": "webpack --progress --config 4.moduleIds.config.js",
+    "dist:5": "webpack --progress --config 5.cssExtract.config.js",
+    "dist:6": "webpack --progress --config 6.contenthash.config.js",
+    "dist:7": "webpack --progress --config 7.multipage.config.js",
+    "dist:8": "webpack --progress --config 8.dynamicImport.config.js",
+    "dist:9": "webpack --progress --config 9.namedChunks.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HexMox/webpack-caching-demos.git"
+  },
+  "keywords": [
+    "webpack",
+    "caching"
+  ],
+  "author": "moxhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HexMox/webpack-caching-demos/issues"
+  },
+  "homepage": "https://github.com/HexMox/webpack-caching-demos#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.3.7"
+  }
+}
